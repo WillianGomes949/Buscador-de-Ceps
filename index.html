@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+    <title>Buscado de CEP's</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Buscador de Cep</h1>
+            <form>
+                <input id="cep" type="text" placeholder="Digite o Cep">
+            
+                <p></p>
+                <button id="botao" class="btn">Buscar Dados</button>
+            </form>
+        </div>
+        <div id="resultados">
+            <div id="resultado"></div> 
+            <div class="links">
+                <button id="atualizar" class="atualizar">
+                    Recarregar <i class="ri-loop-left-line"></i>
+                </button>
+                <button id="mapa" class="atualizar">
+                    <a href="" target="">Mapa <i class="ri-map-2-line"></i></a>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
