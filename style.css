@@ -17,6 +17,15 @@ a {
   font-weight: 500;
 }
 
+:root {
+  --cor-principal: #034AA6;
+  --cor-secundaria: #023373;
+  --cor-background: #F2F2F2;
+  --cor-input:#D7D9D7;
+  --cor-btn: #233ED9;
+  --cor-btn-hover: #363DFF;
+}
+
 
 body {
   background-image: radial-gradient( circle 382px at 50% 50.2%,  rgba(73,76,212,1) 0.1%, rgba(3,1,50,1) 100.2% );
@@ -47,7 +56,7 @@ body::before {
   margin-top: 30vh;
   max-width: 400px;
   min-height: 300px;
-  background-color: aliceblue;
+  background-color: var(--cor-background);
   border-radius: 20px;
   box-shadow: 5px 5px 30px;
 }
@@ -62,7 +71,7 @@ body::before {
 }
 
 .content h1 {
-  color: rgb(21, 0, 255);
+  color: var(--cor-principal);
 }
 
 #resultados {
@@ -74,7 +83,7 @@ body::before {
 
 #resultado {
   display: none;
-  background-color: rgba(202, 202, 202, 0.552);
+  background-color: var(--cor-input);
   margin: 2px;
   padding: 8px;
   border-radius: 4px;
@@ -87,12 +96,16 @@ body::before {
   border: none;
   background-color:transparent;
   font-size: 16px;
-  color: rgb(21, 0, 255);
+  color: var(--cor-principal);
   margin-top: 8px;
 }
 
 .atualizar a {
   text-decoration: none;
+}
+
+.atualizar a:visited {
+  color: var(--cor-principal);
 }
 
 .links {
@@ -113,13 +126,13 @@ form {
   border: none;
   padding: 8px;
   border-radius: 4px;
-  background-color: rgb(21, 0, 255);
-  color: white;
+  background-color: var(--cor-btn);
+  color: var(--cor-background);
 }
 
-.btn:hover, a:hover {
+.btn:hover {
   transition: all 0.3s ease;
-  background-color: rgb(10, 0, 118);
+  background-color: var(--cor-btn-hover);
 }
 
 input {
@@ -127,7 +140,7 @@ input {
   border: none;
   padding: 8px;
   border-radius: 4px;
-  background-color: rgba(202, 202, 202, 0.552);
+  background-color: var(--cor-input);
 }
 
 @media only screen and (max-width: 767px) {
