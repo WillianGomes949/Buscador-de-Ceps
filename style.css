@@ -130,3 +130,10 @@ input {
   background-color: rgba(202, 202, 202, 0.552);
 }
 
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: 300px;
+  }
+}
+
+
